@@ -1,3 +1,4 @@
 def get_user_name(user):
-    # BUG: crashes with TypeError when user is None
+    if user is None:
+        return None
     return user["name"]
